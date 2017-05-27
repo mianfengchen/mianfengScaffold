@@ -33,3 +33,33 @@ img {
 .fr {
     float:right;
 }
+.inb {
+    display:inline-block;
+    *display:inline;
+    *zoom:1;
+    vertical-align:middle;
+}
+.clearfix:after {
+    content:"";
+    display:block;
+    height:0;
+    visibility:hidden;
+    clear:both;
+}
+.clearfix {
+    *zoom:1;
+}
+.tc {
+    text-align:center;
+}
+.tl {
+    text-align:left;
+}
+.tr {
+    text-align:right;
+}
+.to {
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
