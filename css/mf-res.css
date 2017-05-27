@@ -1,0 +1,35 @@
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+}
+ul,ol,li {
+    list-style:none;
+}
+h1,h2,h3,h4,h5,h6,i, b, strong, em , a , input , button , textarea{
+    color:inherit;
+    font : inherit;
+}
+h1,h2,h3,h4,h5,h6,i,b,strong,em {
+    font-style:normal;
+    font-weight:normal;
+}
+input,buttom {
+    border:none;
+    outline:none;
+}
+a {
+    text-decoration:none;
+}
+img {
+    border:none;
+    vertical-align:middle;
+}
+
+
+.fl {
+    float:left;
+}
+.fr {
+    float:right;
+}
