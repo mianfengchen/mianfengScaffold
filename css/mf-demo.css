@@ -1,0 +1,19 @@
+body {
+    font:14px/1 "微软雅黑",arial;
+}
+.mf-wrap {
+    margin:0 auto;
+    width:1200px;
+}
+
+#header {
+    height:100px;
+    line-height:112px;
+    background:rgb(70,104,96);
+    overflow:hidden;
+}
+h1.mf-logo {
+    font-size:32px;
+    letter-spacing:4px;
+    color:#fff;
+}
