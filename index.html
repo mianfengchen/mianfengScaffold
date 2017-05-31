@@ -1,20 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html lang="en" xmlns:mf>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
+    <link rel="stylesheet" href="css/xmlns/mf.css">
     <link rel="stylesheet" href="css/mf-res.css">
     <link rel="stylesheet" href="css/mf-demo.css">
 </head>
+
 <body>
     <header id="header">
         <div class="mf-wrap">
-            <h1 class="mf-logo">眠风尘</h1>
+            <h1 class="mf-logo J_perventDefault">眠风尘</h1>
         </div>
     </header>
-<script src='js/index.js'></script>
+
+    <div id="D_pageBg">
+        <mf:pageBg id="D_pageImgBg"></mf:pageBg>
+        <canvas id="D_weatherSystem" width='600' height='300'></canvas>
+    </div>
+
+    <script src='js/index.js'></script>
+    <script>
+        var can = document.getElementById('D_weatherSystem');
+        var w = can.width,
+            h = can.height;
+        
+        var ctx = can.getContext('2d');
+
+        ctx.beginPath();
+        ctx.strokeStyle = '#999';
+        ctx.lineWidth = 2;
+        ctx.strokeRect(w/2 - 100, h /2 - 100,100,100);
+
+    </script>
 </body>
+
 </html>
